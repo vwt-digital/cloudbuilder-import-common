@@ -99,7 +99,7 @@ def clone_remote(remote_uri: str, branch: str, remote_path: Path) -> Path:
     return remote_path
 
 
-def process_lines(lines: list[str], common_package, function_package) -> list[str]:
+def process_lines(lines: list, common_package, function_package) -> list:
     """
     Processed the lines of the file by looking for imports of the common package.
 
