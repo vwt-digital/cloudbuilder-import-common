@@ -172,7 +172,7 @@ def main() -> int:
         with open(file, "w") as open_file:
             open_file.writelines(lines)
 
-    copytree(str(common_path), str(function_path), dirs_exist_ok=True, ignore=ignore_patterns(".*"))
+    copytree(str(common_path), str(function_path), ignore=ignore_patterns(".*"))
 
     return 0
 
