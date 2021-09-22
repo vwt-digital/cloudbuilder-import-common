@@ -1,4 +1,4 @@
-[![CodeFactor](https://www.codefactor.io/repository/github/vwt-digital/cloudbuilder-import-common/badge)](https://www.codefactor.io/repository/github/vwt-digital/cloudbuilder-import-common)
+[![CodeFactor](https://www.codefactor.io/repository/github/vwt-digital/cloudbuilder-import-common/badge)](https://www.codefactor.io/repository/github/vwt-digital/cloudbuilder-import-common) TODO add this repo to CodeFactor
 
 # Import Common
 In programming, it often happens that we want to reuse code. But how will we go about doing this in cloud functions?
