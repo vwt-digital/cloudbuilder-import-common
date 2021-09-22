@@ -116,8 +116,10 @@ def process_lines(lines: list, common_package, function_package) -> list:
         result = IMPORT_REGEX.search(line)
         if result:
             package = result.group(1)
-            if package.startswith(common_package):
-                lines[i] = line.replace(common_package, function_package)
+            if package.startswith(common_package + "."):
+                lines[i] = line.replace(common_package + ".", "")
+            elif package.startswith(common_package):
+                lines[i] = None
 
     return [line for line in lines if line]
 
