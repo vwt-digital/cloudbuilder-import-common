@@ -2,7 +2,7 @@
 
 import os
 import re
-from shutil import copytree, ignore_patterns
+from distutils.dir_util import copy_tree
 from argparse import ArgumentParser, RawTextHelpFormatter
 from pathlib import Path
 
@@ -172,7 +172,7 @@ def main() -> int:
         with open(file, "w") as open_file:
             open_file.writelines(lines)
 
-    copytree(str(common_path), str(function_path), ignore=ignore_patterns(".*"))
+    copy_tree(str(common_path), str(function_path))
 
     return 0
 
