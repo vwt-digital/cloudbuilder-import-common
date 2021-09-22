@@ -117,7 +117,9 @@ def process_lines(lines: list, common_package, function_package) -> list:
         if result:
             package = result.group(1)
             if package.startswith(common_package + "."):
+                print(lines[i], "->")
                 lines[i] = line.replace(common_package + ".", "")
+                print(lines[i])
             elif package.startswith(common_package):
                 lines[i] = None
 
